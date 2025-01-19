@@ -1,6 +1,6 @@
 <template>
   <v-navigation-drawer
-    id="side-menu"
+    id="navigation-drawer"
     v-model="drawer"
     :location="mobile ? 'bottom' : undefined"
     app
@@ -9,7 +9,7 @@
     width="400"
   >
     <v-list
-      id="side-menu-container"
+      id="navigation-drawer-container"
       expand
     >
       <v-list-group
@@ -38,7 +38,7 @@
       </v-list-group>
       <v-list-item
         v-for="(item, i) in flatRoutes"
-        :id="`menu-item-${i}`"
+        :id="`navigation-drawer-menu-item-${i}`"
         :key="i"
       >
         <v-list-item-content>
