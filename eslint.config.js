@@ -31,6 +31,33 @@ export default [
         },
       ],
       'vue/multi-word-component-names': 'off',
+      "vue/max-attributes-per-line": ["error", {
+        "singleline": {
+          "max": 1
+        },
+        "multiline": {
+          "max": 1
+        }
+      }],
+      "vue/no-irregular-whitespace": ["error", {
+        "skipStrings": true,
+        "skipComments": false,
+        "skipRegExps": false,
+        "skipTemplates": false,
+        "skipHTMLAttributeValues": false,
+        "skipHTMLTextContents": false
+      }],
+      "vue/no-dupe-keys": ["error", {
+        "groups": []
+      }],
+      "comma-dangle": ["error", {
+        "arrays": "never",
+        "objects": "never",
+        "imports": "never",
+        "exports": "never",
+        "functions": "never"
+      }],
+      'arrow-parens': ['error', 'as-needed'], // скобки в стрелочной функции
     }
   }
 ]
