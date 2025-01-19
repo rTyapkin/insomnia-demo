@@ -2,7 +2,7 @@
   <v-navigation-drawer
     id="navigation-drawer"
     v-model="drawer"
-    :location="mobile ? 'bottom' : undefined"
+    :location="isMobile ? 'bottom' : undefined"
     app
     left
     temporary
